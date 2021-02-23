@@ -1,0 +1,579 @@
+@font-face {
+    font-family: "Capture";
+    src: url(../fonts/Logo.ttf)
+}
+
+@font-face {
+    font-family: "Academy";
+    src: url(../fonts/Academy.ttf)
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #3a3a3a;
+    line-height: 1.2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    color: #9f9f9f;
+    font-size: 1em;
+    line-height: 1.9;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+a:focus {
+    outline: 0 solid;
+}
+
+a,
+a:hover,
+a:focus {
+    -webkit-transition: all 500ms ease 0s;
+    transition: all 500ms ease 0s;
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+ul,
+ol {
+    margin: 0;
+}
+
+ol li,
+ul li {
+    list-style: outside none none;
+}
+/*--- Header ------*/
+
+/* ------TOP-------- */
+header .header-top {
+    height: 100px;
+    /* background-color: rgb(25, 105, 114); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top .h1-icon {
+    text-transform: uppercase;
+    font-family: Capture;
+    filter: drop-shadow(2px 3px 5px #b1a8a8);
+}
+
+.header-top .h1-icon span {
+    color: #9f9f9f;
+    font-size: 30px;
+}
+
+.header-top .img-icon {
+    width: 70px;
+    margin-right: 50px;
+    /* height: 50px; */
+    filter: drop-shadow(2px 3px 5px #a49e9e);
+}
+
+.header-top .country-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top .country-list li {
+    padding: 7px;
+    margin-left: 7px;
+    width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+}
+
+.header-top .country-list li:hover {
+    cursor: pointer;
+
+    border: 2px solid #3c3c3c;
+}
+
+.header-top .country-list .active-country {
+    color: #3c3c3c;
+    font-weight: 700;
+    border: 2px solid #3c3c3c;
+}
+
+/* ------NAV------ */
+header .header-nav {
+
+    border-top: 1px solid #CFCFCF;
+    border-bottom: 1px solid #CFCFCF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-nav .nav-list {
+    /* height: 50px; */
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.75);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.header-nav .nav-list li {
+    padding: 12px;
+}
+
+.header-nav .nav-list li:hover {
+    cursor: pointer;
+    color: #FF0303;
+
+}
+
+.active {
+    color: #FF0303;
+}
+
+.header-nav .input-news {
+    /* width: 100%; */
+    margin-left: 30px;
+    border: 1px solid #9f9f9f;
+    border-radius: 5px;
+    padding-left: 7px;
+}
+
+.header-nav .news-search {
+    padding-left: 10px;
+}
+
+.header-nav .news-search:hover {
+    color: #FF0303;
+    cursor: pointer;
+}
+
+/* ------BG------ */
+.col-12 {
+    color: #9f9f9f;
+    padding: 0;
+}
+
+header .header-bg {
+    /* width: 100%; */
+    height: 250px;
+    overflow: hidden;
+    /* padding-left: -15px i !important;
+    padding-right:  -15px;  */
+    /* position: relative; */
+}
+
+.header-bg .ul-bg {
+    display: flex; 
+    position: absolute;
+    /* left: 0px; */
+     /* transition: 5s; */
+} 
+.header-bg .ul-bg li {
+    height: 250px;
+    /* width: 250px; */
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    /* width: 150px; */
+}
+
+.header-bg .ul-bg li .li-author {
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    box-shadow: 2px 3px 10px 1px rgba(19, 19, 19, 0.4);
+    background-color: #FF0303;
+}
+
+.header-bg .ul-bg li a {
+    text-align: center;
+    width: 100%;
+    background-color: rgba(29, 30, 31, 0.7);
+    position: absolute;
+    color: white;
+    top: 30px;
+    left: 0;
+    font-size: 20px;
+    font-family: "Academy";
+}
+
+.header-bg .ul-bg li a:hover {
+    color: #FF0303;
+    text-decoration: none;
+    background-color: rgba(231, 236, 242, 0.2);
+    /* transition: .7s; */
+}
+
+.header-bg .ul-bg li span {
+    text-align: right;
+    /* width: 100%; */
+    background-color: rgba(29, 30, 31, 0.4);
+    position: absolute;
+    color: white;
+    top: 200px;
+    right: 5px;
+    padding: 5px;
+    font-size: 14px;
+    font-style: italic;
+    font-family: "Academy";
+}
+
+/* ------info------------- */
+.header-info {
+    height: 50px;
+    background-color: #3a3a3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inforun-div p {
+    margin: 0;
+    color: #fff;
+}
+
+/* -------Новини по категоріям--------------- */
+section .article-category {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    border-top: 1px solid #CFCFCF;
+}
+
+.title-text {
+    margin: 0;
+    padding: 10px 0;
+    /* font-size: 40px; */
+    font-family: "Roboto";
+}
+
+section .img-category {
+    padding: 5px;
+}
+
+.article-category .author-category {
+    color: white;
+    height: 100%;
+    padding: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #FF0303;
+}
+
+.article-category .a-category {
+    font-size: 18px;
+}
+
+.article-category .a-category:hover {
+    font-size: 900;
+    color: #FF0303;
+}
+
+.article-category .data-category {
+    font-size: 12px;
+    margin: 0;
+    font-style: italic;
+}
+
+.article-category .p-category {
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+/* ------------- aside правий------------------- */
+/* ------------- місце знаходження дата--------- */
+.aside-right .location-div {
+    width: 100%;
+    border-bottom: 1px solid #CFCFCF;
+}
+
+.aside-right .aside-right-title {
+    margin: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.location-div .country-h4 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
+
+.location-div .country-span {
+    padding-left: 20px;
+}
+
+.location-div .data-p {
+    padding: 0px;
+    padding-bottom: 3px;
+    margin: 0px;
+    line-height: 1;
+    font-size: 12px;
+    font-style: italic;
+}
+
+/* ----------------------------------------- */
+/* ------------- Погода-------- */
+.aside-right .weather-div {
+    border-top: 1px solid #CFCFCF;
+    border-bottom: 1px solid #CFCFCF;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* background-color: #9d9393; */
+}
+
+.aside-right .temperature-p {
+    margin: 0;
+    font-size: 22px;
+    padding-left: 5px;
+    color: #3a3a3a
+}
+
+.weather-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.weather-title .input-city {
+    padding: 0;
+    padding-left: 2px;
+    margin-left: 20px;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #9f9f9f;
+}
+
+.weather-title .i-search {
+    padding-left: 7px;
+    color: #9f9f9f;
+}
+
+.weather-title .i-search:hover {
+    cursor: pointer;
+    color: #FF0303;
+}
+
+.aside-right .img-weather {
+    width: 80px;
+    filter: drop-shadow(2px 3px 5px #3c3c3c);
+}
+
+.aside-right .img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aside-right .descr-weather {
+    font-size: 11px;
+    color: #9f9f9f;
+    margin: 0;
+
+}
+
+.aside-right .info-list {
+
+    font-size: 11px;
+    color: #9f9f9f
+}
+
+.aside-right .info-list span {
+    color: #3a3a3a
+}
+
+/*  ------ Курс валют---------   */
+.valute-div {
+    width: 100%;
+    border-top: 1px solid #CFCFCF;
+    border-bottom: 1px solid #CFCFCF;
+}
+
+.valute-div .table-valute {
+    text-align: center;
+    width: 100%;
+    font-size: 11px;
+    border-collapse: collapse;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.valute-div .td-title {
+    /* border: 1px solid black */
+    height: 30px;
+    font-size: 14px;
+    color: #9f9f9f;
+}
+
+.valute-div td:nth-child(2) {
+    color: #9f9f9f;
+}
+
+/* ------------CORONA----------------- */
+.corona-div {
+    width: 100%;
+    border-top: 1px solid #CFCFCF;
+    border-bottom: 1px solid #CFCFCF;
+}
+
+.corona-div p {
+    margin: 0;
+}
+
+.corona-div h6 {
+    margin: 0;
+    padding-top: 3px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.corona-world,
+.ua-div {
+    text-align: center;
+    display: grid;
+    font-size: 11px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.corona-confir {
+
+    font-size: 11px;
+    color: #FF0303;
+}
+
+.corona-confir h6,
+.corona-confir p {
+    color: #FF0303;
+}
+
+.corona-recov {
+    font-size: 11px;
+    color: rgb(11, 192, 32);
+}
+
+.corona-recov h6,
+.corona-recov p {
+    color: rgb(11, 192, 32);
+}
+
+.corona-death {
+    font-size: 11px;
+    color: black
+}
+
+.corona-death h6,
+.corona-death p {
+    color: black
+}
+
+/* ------------Zodiak----------------- */
+.zodiak-div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #cfcfcfc9;
+    border-bottom: 1px solid #CFCFCF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.zodiak-div .znak-div {
+    width: 100%;
+    height: 75px;
+    border: 2px solid #fff;
+    /* border-radius: 10px; */
+    /* border: 1px solid #9f9f9f; */
+}
+
+.zodiak-div .znak-div:hover {
+    cursor: pointer;
+    /* background-color: #CFCFCF; */
+    border: 2px solid #3c3c3c;
+    /* transition: 0.5s; */
+}
+
+.zodiak-div .znak-div:hover .znak-name {
+    font-weight: 700;
+    color: #3c3c3c;
+}
+
+.zodiak-div .znak-img {
+    margin: 5px;
+    width: 50px;
+    height: 45px;
+    filter: drop-shadow(1px 1px 3px #3c3c3c);
+
+}
+
+.zodiak-div .znak-name {
+    text-align: center;
+    font-size: 11px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+
+/* ----------------------------------- */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: #3a3a3a;
+    border-top: 1px solid #3a3a3a;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+footer p {
+    font-size: 12px;
+    margin: 0;
+    color: #fff;
+}

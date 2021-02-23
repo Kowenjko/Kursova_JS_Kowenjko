@@ -1,0 +1,13 @@
+header .header-top {
+    height: 100px;
+    background-color: rgb(25, 105, 114);
+}
+
+.header-top .h1-icon {
+    color: darkgreen;
+}
+
+header .header-bg {
+    height: 50px;
+    background-color: rgb(25, 57, 114);
+}
